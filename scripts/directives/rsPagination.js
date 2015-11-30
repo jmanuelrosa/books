@@ -144,12 +144,6 @@
 
             middle = _.ceil(DEFAULT_MAXPAGES / 2);
 
-            // Base
-            vm.rewind = true;
-            vm.forward = true;
-            pageFirst = vm.current - 2;
-            pageEnd = vm.current + 2;
-
             // Show page numbers
             if(vm.totalPages === 1) {
                 vm.rewind = false;
@@ -165,6 +159,11 @@
                 vm.forward = false;
                 pageFirst = vm.totalPages - maxPages + 1;
                 pageEnd = vm.totalPages;
+            } else {
+                vm.rewind = true;
+                vm.forward = true;
+                pageFirst = vm.current - 2;
+                pageEnd = vm.current + 2;
             }
 
             if(vm.totalPages <= DEFAULT_MAXPAGES) {
