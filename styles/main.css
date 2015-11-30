@@ -173,6 +173,7 @@ h5 { font-size: 1rem }
 .book__category:last-child:after { content: ""; }
 
 .book__category .link {
+    display: inline-block;
     color: #555C63;
     margin-right: -2px;
     text-decoration: underline;
