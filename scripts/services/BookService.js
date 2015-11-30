@@ -1,6 +1,6 @@
 /**
  * Book Service
- * @desc [text]
+ * @desc Manage requests and data logic from books
  * @namespace Factories
  */
 (function() {
@@ -21,7 +21,7 @@
     ];
     /**
      * @name BookService
-     * @desc [text]
+     * @desc Manage requests and data logic books
      * @namespace BookService
      * @memberOf Factories
      */
@@ -35,10 +35,11 @@
         // Private ************************************************
         /**
          * @name getBooks
-         * @desc  [text]
-         * @param {Number} skip [text]
-         * @param {Number} limit [text]
-         * @returns {Object}
+         * @desc Gets a list of books based on the category filters, gender
+         * and search, if any exist.
+         * @param {Number} skip Skipped elements
+         * @param {Number} limit Number os items in list
+         * @returns {Promise} Promise with the list of books
          * @memberOf Factories.BookService
          */
         function getBooks(page, limit, filters) {
@@ -111,9 +112,9 @@
 
         /**
          * @name getBook
-         * @desc  [text]
-         * @param {String} id [text]
-         * @returns {Object}
+         * @desc Gets a book data
+         * @param {String} id Book identifier
+         * @returns {Object} Promise with book data
          * @memberOf Factories.BookService
          */
         function getBook(id) {

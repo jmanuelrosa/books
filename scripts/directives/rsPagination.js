@@ -1,6 +1,6 @@
 /**
  * Reedsy Pagination Directive
- * @desc [text]
+ * @desc Display and manage pagination
  * @namespace Directives
  */
 (function() {
@@ -14,7 +14,8 @@
 
     /**
      * @name rsPagination
-     * @desc [text]
+     * @desc Show and manage pagination, changing the route according to the
+     *       selected page
      * @namespace rsPagination
      * @memberOf Directives
      */
@@ -35,7 +36,7 @@
     RsPaginationDirCtrl.$inject = ['$route', '_', 'DEFAULT_MAXPAGES'];
     /**
      * @name RsPaginationDirCtrl
-     * @desc [text]
+     * @desc Manages all pagination logic from the controller
      * @namespace RsPaginationDirCtrl
      * @memberOf Controllers
      */
@@ -66,9 +67,9 @@
         // Private ************************************************
         /**
          * @name rewindHandler
-         * @desc [text]
-         * @returns {Object}
-         * @memberOf Controllersrs.rsPaginationDirCtrl
+         * @desc Move to first page by modifying the url with new new page
+         * @returns {Object} New route with params applied
+         * @memberOf Controllersrs.RsPaginationDirCtrl
          */
         function rewindHandler() {
             return $route.updateParams({
@@ -78,9 +79,9 @@
 
         /**
          * @name previousHandler
-         * @desc [text]
-         * @returns {Object}
-         * @memberOf Controllersrs.rsPaginationDirCtrl
+         * @desc Move to previous page by modifying the url with new new page
+         * @returns {Object} New route with params applied
+         * @memberOf Controllersrs.RsPaginationDirCtrl
          */
         function previousHandler() {
             return $route.updateParams({
@@ -90,10 +91,10 @@
 
         /**
          * @name pageHandler
-         * @desc [text]
+         * @desc Move to page selected by modifying the url with new new page
          * @param {String} page [text]
-         * @returns {Object}
-         * @memberOf Controllersrs.rsPaginationDirCtrl
+         * @returns {Object} New route with params applied
+         * @memberOf Controllersrs.RsPaginationDirCtrl
          */
         function pageHandler(page) {
             return $route.updateParams({
@@ -103,9 +104,9 @@
 
         /**
          * @name nextHandler
-         * @desc [text]
-         * @returns {Object}
-         * @memberOf Controllersrs.rsPaginationDirCtrl
+         * @desc Move to next page by modifying the url with new new page
+         * @returns {Object} New route with params applied
+         * @memberOf Controllersrs.RsPaginationDirCtrl
          */
         function nextHandler() {
             return $route.updateParams({
@@ -115,9 +116,9 @@
 
         /**
          * @name forwardHandler
-         * @desc [text]
-         * @returns {Object}
-         * @memberOf Controllers.rsPaginationDirCtrl
+         * @desc Move to last page by modifying the url with new new page
+         * @returns {Object} New route with params applied
+         * @memberOf Controllers.RsPaginationDirCtrl
          */
         function forwardHandler() {
             return $route.updateParams({
@@ -125,6 +126,12 @@
             });
         }
 
+        /**
+         * @name forwardHandler
+         * @desc [text]
+         * @returns {Object} First and last page for render
+         * @memberOf Controllers.RsPaginationDirCtrl
+         */
         function calcPages() {
             var pageFirst;
             var pageEnd;

@@ -1,6 +1,6 @@
 /**
  * Reedsy Book Directive
- * @desc [text]
+ * @desc Displays a book according to the data received from the model
  * @namespace Directives
  */
 (function() {
@@ -13,7 +13,7 @@
 
     /**
      * @name rsBook
-     * @desc [text]
+     * @desc Displays a book through the data obtained from the scope
      * @namespace rsBook
      * @memberOf Directives
      */
@@ -33,7 +33,7 @@
 
     /**
      * @name RsBookDirCtrl
-     * @desc [text]
+     * @desc Basic Controller to use vm in view
      * @namespace RsBookDirCtrl
      * @memberOf Controllers
      */

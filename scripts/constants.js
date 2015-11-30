@@ -1,3 +1,8 @@
+/**
+ * Constants
+ * @desc App constant data
+ * @namespace Constants
+ */
 (function() {
     'use strict';
 

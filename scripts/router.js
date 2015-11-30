@@ -1,3 +1,8 @@
+/**
+ * Router
+ * @desc App routing
+ * @namespace Config
+ */
 (function() {
     'use strict';
 
@@ -6,6 +11,12 @@
         .config(router);
 
     router.$inject = ['$routeProvider'];
+    /**
+     * @name router
+     * @desc Configure application router
+     * @namespace Config
+     * @memberOf Config
+     */
     function router($routeProvider) {
         $routeProvider
             .when('/', {
@@ -28,7 +39,14 @@
         $routeProvider.otherwise('/');
 
         // Private ************************************************
-
+        /**
+         * @name books
+         * @desc Gets a list of books based on filters needed to render the view
+         * @param {Service} $route Manages routes
+         * @param {Service} BookService Service for manages book
+         * @returns {Promise} Promise with the list of books
+         * @memberOf Config.router
+         */
         function books($route, BookService) {
             var current = $route.current.params.page || 1;
             return BookService.getBooks(
@@ -42,7 +60,15 @@
             );
         }
 
-        function book ($route, BookService) {
+        /**
+         * @name book
+         * @desc Gets data book needed to render the view
+         * @param {Service} $route Manages routes
+         * @param {Service} BookService Service for manages book
+         * @returns {Object} Promise with book data
+         * @memberOf Config.router
+         */
+        function book($route, BookService) {
             return BookService.getBook($route.current.params.id);
         }
     }

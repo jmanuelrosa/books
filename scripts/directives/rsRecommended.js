@@ -1,6 +1,6 @@
 /**
  * Reedsy Recommended Directive
- * @desc [text]
+ * @desc Display a few books recommended
  * @namespace Directives
  */
 (function() {
@@ -13,7 +13,7 @@
 
     /**
      * @name rsRecommended
-     * @desc [text]
+     * @desc Show recommended books based on model (recommended scope)
      * @namespace rsRecommended
      * @memberOf Directives
      */
@@ -33,7 +33,7 @@
 
     /**
      * @name RsRecommendedDirCtrl
-     * @desc [text]
+     * @desc Basic Controller to use vm in view
      * @namespace RsRecommendedDirCtrl
      * @memberOf Controllers
      */

@@ -1,6 +1,6 @@
 /**
  * Main Controller
- * @desc [text]
+ * @desc Main controller that public a list of books to view
  * @namespace Controllers
  */
 (function() {
@@ -13,7 +13,7 @@
     MainCtrl.$inject = ['$location', 'books'];
     /**
      * @name MainCtrl
-     * @desc [text]
+     * @desc Controller that public a list of books to view
      * @namespace MainCtrl
      * @memberOf Controllers
      */
@@ -29,7 +29,6 @@
             next: books.meta.next,
             limit: books.meta.limit
         };
-
     }
 
 })();

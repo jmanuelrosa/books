@@ -1,6 +1,6 @@
 /**
  * Details Controller
- * @desc [text]
+ * @desc Public a book to view
  * @namespace Controllers
  */
 (function() {
@@ -13,7 +13,7 @@
     DetailsCtrl.$inject = ['book'];
     /**
      * @name DetailsCtrl
-     * @desc [text]
+     * @desc Public a book to view
      * @namespace DetailsCtrl
      * @memberOf Controllers
      */

@@ -1,6 +1,6 @@
 /**
  * Genre Service
- * @desc [text]
+ * @desc Manage requests and data logic from genres
  * @namespace Factories
  */
 (function() {
@@ -13,7 +13,7 @@
     GenreService.$inject = ['$http', 'API', '_'];
     /**
      * @name GenreService
-     * @desc [text]
+     * @desc Manage requests and data logic from genres
      * @namespace GenreService
      * @memberOf Factories
      */
@@ -26,8 +26,8 @@
         // Private ************************************************
         /**
          * @name getGenres
-         * @desc  [text]
-         * @returns {Object}
+         * @desc Gets a list of genres
+         * @returns {Object} Promise with the list of genres
          * @memberOf Factories.GenreService
          */
         function getGenres() {

@@ -1,6 +1,6 @@
 /**
  * TimeAgo Filter
- * @desc [text]
+ * @desc Filters for angular app
  * @namespace Filters
  */
 (function() {
@@ -15,7 +15,7 @@
      * @name timeAgo
      * @desc [text]
      * @param {String} time [text]
-     * @returns {Object}
+     * @returns {String} Date wih relative time
      * @namespace timeAgo
      * @memberOf Filters
      */

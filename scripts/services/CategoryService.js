@@ -1,6 +1,6 @@
 /**
  * Category Service
- * @desc [text]
+ * @desc Manage requests and data logic from categories
  * @namespace Factories
  */
 (function() {
@@ -13,7 +13,7 @@
     CategoryService.$inject = ['$http', 'API', '_'];
     /**
      * @name CategoryService
-     * @desc [text]
+     * @desc Manage requests and data logic from categories
      * @namespace CategoryService
      * @memberOf Factories
      */
@@ -26,8 +26,8 @@
         // Private ************************************************
         /**
          * @name getCategories
-         * @desc  [text]
-         * @returns {Object}
+         * @desc Gets a list of categories
+         * @returns {Object} Promise with the list of categories
          * @memberOf Factories.CategoryService
          */
         function getCategories() {

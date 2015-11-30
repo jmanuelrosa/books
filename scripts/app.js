@@ -1,3 +1,8 @@
+/**
+ * App
+ * @desc App entry point
+ * @namespace Module
+ */
 (function () {
     'use strict';
 
