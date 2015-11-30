@@ -52,7 +52,6 @@
         vm.forward = false;
         vm.current = _.parseInt(vm.options.current);
         vm.totalPages = _.ceil(vm.options.total / vm.options.limit);
-        vm.totalPages = 5;
 
         vm.rewindHandler = rewindHandler;
         vm.previousHandler = previousHandler;

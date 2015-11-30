@@ -81,7 +81,6 @@
                 })
                 .then(function (books) {
                     totalPages = _.ceil(books.length / limit);
-                    totalPages = 5;
                     res = {
                         data: _.slice(books, limit * (page - 1), limit * page),
                         meta: {
@@ -90,7 +89,7 @@
                         }
                     };
 
-                    if(totalPages !== 1) {
+                    if(totalPages > 1) {
                         if(page === 1) {
                             res.meta.next = page + 1;
                         }
