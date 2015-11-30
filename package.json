@@ -1,0 +1,48 @@
+{
+  "name": "reedsy",
+  "description": "Code Challenge",
+  "version": "1.0.0",
+  "main": "",
+  "keywords": [
+    "reedsy"
+  ],
+  "license": {
+    "type": "ISC",
+    "url": "http://opensource.org/licenses/ISC"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "https://reedsy.com/",
+  "author": "Jose Manuel Rosa Moncayo",
+  "contributors": [
+    {
+      "name": "José Manuel Rosa Moncayo",
+      "email": "josemanuel.rosamoncayo@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "",
+    "email": ""
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "linter": "jshint ."
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1-rc1"
+  }
+}

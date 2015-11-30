@@ -1,0 +1,9 @@
+<div class="recommended">
+    <h4 class="bold txt--center">Similar Readding</h4>
+    <p class="bold txt--center">If you like this book, we recommended you check out these emerging title</p>
+    <ul class="equal__wrapper p-tops" itemscope="itemscope" itemtype="https://schema.org/PRoduct">
+        <li ng-repeat="book in ::vm.recommended" class="equal__item col1of3 book" itemprop="isRelatedTo">
+            <rs-book book="::book"></rs-book>
+        </li>
+    </ul>
+</div>

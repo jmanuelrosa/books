@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="reedsy">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Reedsy</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="robots" content="noindex,nofollow">
+
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/grid.css">
+        <link rel="stylesheet" href="styles/forms.css">
+        <link rel="stylesheet" href="styles/helpers.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body class="bck--softgrey">
+        <div ng-view>
+        </div>
+
+        <script src="node_modules/moment/min/moment.min.js"></script>
+        <script src="node_modules/lodash/index.js"></script>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-route/angular-route.js"></script>
+
+        <script src="scripts/app.js"></script>
+
+        <script src="scripts/config.js"></script>
+        <script src="scripts/router.js"></script>
+        <script src="scripts/constants.js"></script>
+        <script src="scripts/filters/timeAgo.js"></script>
+        <script src="scripts/controllers/MainCtrl.js"></script>
+        <script src="scripts/controllers/DetailsCtrl.js"></script>
+        <script src="scripts/directives/rsBook.js"></script>
+        <script src="scripts/directives/rsRecommended.js"></script>
+        <script src="scripts/directives/rsFilters.js"></script>
+        <script src="scripts/directives/rsPagination.js"></script>
+        <script src="scripts/services/BookService.js"></script>
+        <script src="scripts/services/CategoryService.js"></script>
+        <script src="scripts/services/GenreService.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<div class="filters bck--athens border--athens">
+    <a href="" ng-click="::vm.show(true)" class="filter--trigger ion-funnel bold ck--softblack">Show filters</a>
+    <div class="filters__options" ng-class="{ 'show': vm.showFilters, 'hide': vm.showFilters }">
+        <a href="" ng-click="::vm.show(false)" class="filter--trigger close ion-close bold ck--softblack">
+            <span class="visuallyhidden">Ocultar filtros</span>
+        </a>
+        <div class="filters__filter">
+            <label class="filters__label" for="category">Find me the best</label>
+            <div class="select filters__select">
+                <select name="category" id="category" ng-model="vm.selected.category" ng-options="category for category in vm.data.categories" ng-change="vm.changeFilters()">
+                    <option value="">Select a category</option>
+                </select>
+            </div>
+        </div>
+        <div class="filters__filter">
+            <label class="filters__label" for="genre">books about</label>
+            <div class="select filters__select">
+                <select name="genre" id="genre" ng-model="vm.selected.genre" ng-options="genre for genre in vm.data.genre" ng-change="vm.changeFilters()">
+                    <option value="">Select a genre</option>
+                </select>
+            </div>
+        </div>
+        <div class="filters__filter">
+            <form name="searchFrm" ng-submit="::vm.changeFilters()" novalidate>
+                <label class="filters__label filters__label--hide" for="search">Search</label>
+                <div class="filters__search search">
+                    <input type="search" name="search" id="search" ng-model="vm.selected.search" placeholder="Search books">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

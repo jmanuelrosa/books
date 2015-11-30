@@ -1,0 +1,233 @@
+/**
+ * Main
+ */
+
+html { font-size: 100% }
+
+body {
+    font-family: Lato,'Helvetica Neue',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #555C63;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: Lato,'Helvetica Neue',sans-serif;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+h1 { font-size: 2rem }
+h2 { font-size: 1.714rem }
+h3 { font-size: 1.28rem }
+h4 { font-size: 1.071rem }
+h5 { font-size: 1rem }
+
+/**
+ * Filters Module
+ */
+.filters {
+    background-color: #EDF1F5;
+    padding: 15px 20px;
+    border-radius: 3px;
+    position: relative;
+    text-align: right;
+}
+
+.filters__filter { padding-left: 1em; }
+
+.filters__filter,
+.filters__label,
+.filters__select,
+.filters__search { display: inline-block }
+
+.filters__label {
+    margin-right: 8px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.filters__label--hide { display: none; }
+
+.filters__select { vertical-align: middle }
+
+.filters__options { display: block }
+
+.filter--trigger {
+    display: none;
+    text-align: left;
+}
+
+.filter--trigger:before { margin-right: 5px }
+
+@media only screen and (max-width: 66.563em) {
+    .filters__label,
+    .filters__select,
+    .filters__search,
+    .filters__label--hide { display: block }
+}
+
+@media only screen and (max-width: 53.875em) {
+    .filters__label,
+    .filters__select,
+    .filters__search { display: inline-block }
+
+    .filter--trigger,
+    .filters__filter { display: block }
+
+    .filters__options {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .filters__select,
+    .filters__search {
+        width: 70%;
+    }
+
+    .filters__filter { margin-bottom: 10px }
+
+    .filters__search input,
+    .filters__select select { width: 100% }
+
+    .filters__search:before { right: 13px }
+}
+
+@media only screen and (max-width: 23.875em) {
+    .filters__label,
+    .filters__select,
+    .filters__search,
+    .filters__label--hide {
+        display: block;
+        width: 100%;
+    }
+}
+
+/**
+ * Book List Module
+ */
+.bookmini {
+    background-color: #fff;
+    border: 1px solid #E8EBED;
+    border-radius: 10px;
+    padding: 7px 7px 30px 7px;
+    position: relative;
+    width: 100%;
+}
+
+.bookmini:hover { box-shadow: 0 0 10px rgba(0,0,0,.1) }
+
+.bookmini__cover {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    min-width: 100%;
+}
+
+.bookmini__data { padding: 9px 12px; }
+
+.bookmini__name {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+.bookmini__author {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.bookmini__info {
+    padding: 7px 18px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+
+/**
+ * Book Details Module
+ */
+
+.book__info {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.book__title { margin-bottom: .15em; }
+
+.book__description { padding: 10px 0 20px 0; }
+
+.book__author { font-size: 1em; }
+
+.book__categoriestitle { margin: 0 0 .6em; }
+
+.book__category {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.book__category:after { content: ", "; }
+
+.book__category:last-child:after { content: ""; }
+
+.book__category .link {
+    color: #555C63;
+    margin-right: -2px;
+    text-decoration: underline;
+}
+
+.book__content {
+    line-height: 1.2rem;
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+
+/**
+ * Author Module
+ */
+.author {
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.author:before {
+    position: relative;
+    width: 200px;
+    height: 1px;
+    background-color: #555C63;
+    content: '';
+    margin: 0 auto;
+    display: block;
+}
+
+.author__image {
+    padding: 5px;
+    width: 150px;
+    margin: 10px 0;
+}
+
+/**
+ * Pagination Module
+ */
+.pagination__list {
+    display: inline-block;
+    font-size: 1.143em;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.pagination__item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination__item--current { font-weight: 700 }
+
+.pagination__item a {
+    display: block;
+    border: 1px solid #E8EBED;
+    padding: 5px 10px;
+}

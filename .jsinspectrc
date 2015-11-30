@@ -1,0 +1,4 @@
+{
+    "ignore": ".git|node_modules|.tmp|.tap",
+    "identifiers": true
+}

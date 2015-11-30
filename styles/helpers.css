@@ -1,0 +1,104 @@
+/**
+ * Helpers
+ */
+
+/**
+ * Colous
+ */
+.ck--softblack { color: #555C63 }
+.bck--white { background-color: #ffffff }
+.bck--softgrey { background-color: #F7F9FA }
+.bck--athens { background-color: #EDF1F5 }
+.bck--fog { background-color: #CDD4DB }
+
+/**
+ * Borders
+ */
+.border--athens { border: 1px solid #DDE5EC; }
+.circle { border-radius: 50% }
+
+/**
+ * Text
+ */
+.bold { font-weight: 700 }
+
+/**
+ * Display
+ */
+.hide { display: none  !important }
+.show { display: block !important }
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+/**
+ * Position
+ */
+.left { float: left }
+.right { float: right }
+
+.txt--center { text-align: center }
+
+/**
+ * Flexbox
+ */
+.equal {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    display: -moz-flex;
+}
+
+.equal__wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: -moz-wrap;
+    flex-wrap: wrap;
+}
+
+.equal__item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    display: -moz-flex;
+}
+
+.rwd-img {
+    height: auto;
+    max-width: 100%;
+}
+
+/**
+ * Margin and Padding
+ */
+.m-inner { padding: 50px 100px }
+
+.p-top-bottom-none {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.p-tops { padding-top: 20px }
+.p-top { padding-top: 40px }
+.p-bottom { padding-bottom: 40px }
+
+/**
+ * Others
+ */
+.close {
+    color: #bbb;
+    font-size: 14px;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
