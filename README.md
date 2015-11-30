@@ -1,5 +1,7 @@
 # Books
 
+Based on modules and ui-router.
+
 ## Install dependencies
 
 `npm install`
