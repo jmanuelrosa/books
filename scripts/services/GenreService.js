@@ -7,7 +7,7 @@
     'use strict';
 
     angular
-        .module('reedsy')
+        .module('services.genre', [])
         .factory('GenreService', GenreService);
 
     GenreService.$inject = ['$http', 'API', '_'];

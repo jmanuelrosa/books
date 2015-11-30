@@ -1,0 +1,20 @@
+<main role="main" class="container p-top">
+    <div class="row">
+        <div class="colfull">
+            <rs-filters ref="main"></rs-filters>
+        </div>
+    </div>
+
+    <section class="row equal">
+        <ul ng-if="::vm.books.data.length" class="equal__wrapper">
+            <li class="equal__item col1of3" ng-repeat="book in ::vm.books.data">
+                <rs-book book="::book" ref="details({ id: vm.book.id })"></rs-book>
+            </li>
+        </ul>
+        <p ng-if="::!vm.books.data.length" class="colfull">We could not find any results with the selected filters.</p>
+    </section>
+
+    <nav>
+        <rs-pagination options="::vm.pager" ref="main"></rs-pagination>
+    </nav>
+</main>

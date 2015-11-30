@@ -7,7 +7,7 @@
     'use strict';
 
     angular
-        .module('reedsy', ['ngRoute'])
+        .module('app', ['modules', 'services', 'directives', 'filters'])
         .run(run);
 
     function run() {}

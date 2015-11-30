@@ -7,23 +7,34 @@
     'use strict';
 
     angular
-        .module('reedsy')
+        .module('app')
         .config(config);
 
-    config.$inject = ['$compileProvider', '$locationProvider', '$logProvider'];
+    config.$inject = [
+        '$compileProvider',
+        '$locationProvider',
+        '$logProvider',
+        '$uiViewScrollProvider'
+    ];
     /**
      * @name config
      * @desc Configure services and application settings
      * @namespace Config
      * @memberOf Config
      */
-    function config($compileProvider, $locationProvider, $logProvider) {
+    function config(
+        $compileProvider,
+        $locationProvider,
+        $logProvider,
+        $uiViewScrollProvider
+    ) {
         $logProvider.debugEnabled(true);
         $locationProvider.html5Mode({
             enabled: true,
             requireBase: false
         });
-        $compileProvider.debugInfoEnabled(false);
+        $uiViewScrollProvider.useAnchorScroll();
+        // $compileProvider.debugInfoEnabled(true);
 
     }
 

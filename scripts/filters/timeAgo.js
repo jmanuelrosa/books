@@ -7,7 +7,7 @@
     'use strict';
 
     angular
-        .module('reedsy')
+        .module('filters', [])
         .filter('timeAgo', timeAgo);
 
     timeAgo.$inject = ['moment'];

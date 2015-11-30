@@ -7,7 +7,7 @@
     'use strict';
 
     angular
-        .module('reedsy')
+        .module('app')
         .constant('moment', moment)
         .constant('_', _)
         .constant('API', {

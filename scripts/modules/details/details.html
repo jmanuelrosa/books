@@ -1,0 +1,46 @@
+<article class="book">
+    <header class="book__header bck--fog" itemscope="itemscope" itemtype="https://schema.org/Book">
+        <div class="container p-top">
+            <div class="row">
+                <div class="collfull book__info">
+                    <h1 itemprop="name">{{ ::vm.book.name }}</h1>
+                    <h2 class="book__author">by
+                        <span itemprop="author">{{ ::vm.book.author.name }}</span>
+                    </h2>
+                    <p class="book__description" itemprop="headline">{{ ::vm.book.description }}</p>
+                    <p class="book__categoriestitle">Categories</p>
+                    <ul class="book__categories">
+                        <li ng-repeat='genre in ::vm.book.genre' class="book__category" itemprop="genre">
+                            <p class="link">{{ ::genre }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="book__body">
+        <div class="container p-top p-bottom">
+            <div class="row">
+                <div class="collfull book__info p-top-bottom-none">
+                    <h3>Introduction</h3>
+                    <p class="book__content" ng-repeat="text in ::vm.book.introduction" itemprop="text">{{ ::text.content }}</p>
+                    <div class="author" itemscope="itemscope" itemtype="https://schema.org/Person">
+                        <img ng-src="{{ ::vm.book.author.avatar }}" alt="{{ ::vm.book.author.name }}" class="author__image border--athens circle bck--white" itemprop="image">
+                        <p class="author__name">Written by
+                            <span itemprop="name">{{ ::vm.book.author.name }}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+<section class="bck--fog">
+    <div class="container p-top p-bottom">
+        <div class="row">
+            <div class="collfull p-top-bottom-none">
+                <rs-recommended recommended="::vm.book.recommended"></rs-recommended>
+            </div>
+        </div>
+    </div>
+</section>

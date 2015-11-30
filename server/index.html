@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="reedsy">
+<html ng-app="app">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,28 +17,36 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body class="bck--softgrey">
-        <div ng-view autoscroll>
-        </div>
+        <div ui-view autoscroll></div>
 
         <script src="node_modules/moment/min/moment.min.js"></script>
         <script src="node_modules/lodash/index.js"></script>
         <script src="node_modules/angular/angular.js"></script>
-        <script src="node_modules/angular-route/angular-route.js"></script>
+        <script src="node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
 
-        <script src="scripts/app.js"></script>
+        <script src="scripts/modules/main/Main.js"></script>
+        <script src="scripts/modules/main/MainRouter.js"></script>
+        <script src="scripts/modules/main/MainCtrl.js"></script>
+        <script src="scripts/modules/details/Details.js"></script>
+        <script src="scripts/modules/details/DetailsRouter.js"></script>
+        <script src="scripts/modules/details/DetailsCtrl.js"></script>
+        <script src="scripts/modules/Modules.js"></script>
 
-        <script src="scripts/config.js"></script>
-        <script src="scripts/router.js"></script>
-        <script src="scripts/constants.js"></script>
-        <script src="scripts/filters/timeAgo.js"></script>
-        <script src="scripts/controllers/MainCtrl.js"></script>
-        <script src="scripts/controllers/DetailsCtrl.js"></script>
-        <script src="scripts/directives/rsBook.js"></script>
-        <script src="scripts/directives/rsRecommended.js"></script>
-        <script src="scripts/directives/rsFilters.js"></script>
-        <script src="scripts/directives/rsPagination.js"></script>
+        <script src="scripts/directives/rsBook/rsBook.js"></script>
+        <script src="scripts/directives/rsRecommended/rsRecommended.js"></script>
+        <script src="scripts/directives/rsFilters/rsFilters.js"></script>
+        <script src="scripts/directives/rsPagination/rsPagination.js"></script>
+        <script src="scripts/directives/Directives.js"></script>
+
         <script src="scripts/services/BookService.js"></script>
         <script src="scripts/services/CategoryService.js"></script>
         <script src="scripts/services/GenreService.js"></script>
+        <script src="scripts/services/Services.js"></script>
+
+        <script src="scripts/filters/timeAgo.js"></script>
+
+        <script src="scripts/app.js"></script>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/constants.js"></script>
     </body>
 </html>

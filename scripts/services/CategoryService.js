@@ -7,7 +7,7 @@
     'use strict';
 
     angular
-        .module('reedsy')
+        .module('services.category', [])
         .factory('CategoryService', CategoryService);
 
     CategoryService.$inject = ['$http', 'API', '_'];

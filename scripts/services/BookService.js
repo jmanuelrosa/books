@@ -7,7 +7,7 @@
     'use strict';
 
     angular
-        .module('reedsy')
+        .module('services.books', [])
         .constant('DEFAULT_RECOMMENDED', 3)
         .constant('DEFAULT_LIMIT', 6)
         .factory('BookService', BookService);
